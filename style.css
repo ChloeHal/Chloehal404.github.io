@@ -26,7 +26,7 @@ h1 {
   font-size: x-large;
   padding: 0px 0;
   font-weight: 800;
-  h1 {font-size: 3em;}
+  font-size: 3em;}
 
 @media screen and (max-width: 64em) {
 h1 {
@@ -45,7 +45,7 @@ h1 {
     font-sitze: 1.5em;
   }
 }
-}
+
 
 p {
   font-size: large;
