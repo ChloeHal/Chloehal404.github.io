@@ -1,152 +1,3 @@
-/*
-img {
-    width : 20%;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-
- 
-    h1,
-p,
-a{
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato';
-}
-
-h1 {
-  font-size: x-large;
-  padding: 0px 0;
-  font-weight: 800;
-  font-size: 3em;}
-
-@media screen and (max-width: 64em) {
-h1 {
-    font-size: 3.5em;
-  }
-}
-
-@media screen and (max-width: 50em) {
-h1 {
-    font-size: 2em;
-  }
-}
-
-@media screen and (max-width: 30em){
-h1 {
-    font-size: 1.5em;
-  }
-}
-
-
-p {
-  font-size: large;
-  font-weight: 100;
-  padding: 20px 0;
-  letter-spacing: 5px;
-}
-
-@media screen and (max-width: 64em) {
-    p {
-        font-size: 2em;
-      }
-    }
-    
-    @media screen and (max-width: 50em) {
-    p {
-        font-size: 1.75em;
-      }
-    }
-    
-    @media screen and (max-width: 30em){
-    p {
-        font-sitze: 1.5em;
-      }
-    }
-
-.header {
-  width: 100%;
-  padding:60px 0;
-  text-align: center;
-  color: #caf0f8;
-}
-   
-
-    .button {
-        font-size: large;
-  font-weight: 100;
-  letter-spacing: 5px;
-
-        background-color: #caf0f8;
-        border: none;
-        color: #3a0ca3;
-        padding: 5px 10px;
-        text-align: left;
-        text-decoration: none;
-        display: inline-block;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-        background-color: #3a0ca3; 
-        color: #caf0f8; 
-        border: 2px solid #caf0f8;
-        border-radius: 8px;
-      }
-      
-      .button:hover {
-        background-color: #f72585;
-        border: 2px solid #f72585;
-
-        color: #3a0ca3;
-      }
- 
-
-      body {
-        padding: 0;
-        margin: 0;
-        width: 100vw;
-        height: 100vh;
-        font-family: "Poppins", sans-serif;
-        font-family: "Prompt", sans-serif;
-    }
-    
-    .container {
-        display: flex;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-    }
-    
-    #right {
-        width: 50%;
-        background-color: #347afd;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-    }
-    
-    .texte {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-
-    
-
-    
-    
-    
-    
-    */
     body {
         padding: 0;
         margin: 0;
@@ -155,9 +6,20 @@ p {
         font-family: "lato";
     }
     
-    a {
-        align-self: center;
-        text-decoration: none;
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #3a0ca3;
+    }
+
+    .photo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 50%;
+        background-image: url("back.png");
+        background-size: cover ;
     }
 
     img {
@@ -169,22 +31,6 @@ p {
       transform: rotate(60deg);
     }
 
-    .container {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        background-color: #3a0ca3;
-    }
-    
-    .photo {
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        width: 50%;
-        background-image: url("back.png");
-        background-size: cover ;
-    }
-    
     #zonetext {
         width: 50%;
         background-color: #3a0ca3;
@@ -213,7 +59,10 @@ p {
         margin-top: 20px;
     }
     
-    
+    a {
+        align-self: center;
+        text-decoration: none;
+    }
     
     .button {
         display: flex;
