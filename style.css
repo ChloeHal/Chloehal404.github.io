@@ -1,13 +1,4 @@
-body{
-    display: block;
-    background-color: #3a0ca3;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-}
+/*
 img {
     width : 20%;
     margin-left: auto;
@@ -143,49 +134,112 @@ p {
         color: #ffffff;
     }
     
-    .containerRight {
+    .texte {
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
     }
+
     
+
+    
+    
+    
+    
+    */
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        font-family: "lato";
+    }
     
     a {
         align-self: center;
         text-decoration: none;
     }
-    
-    
-    
+
     img {
-        width: 100%;
+        width: 50%;
         
+        transition: transform .7s ease-in-out;
+    }
+    img:hover {
+      transform: rotate(60deg);
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #3a0ca3;
+    }
+    
+    .photo {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 50%;
+        background-image: url("back.png");
+        background-size: cover ;
+    }
+    
+    #zonetext {
+        width: 50%;
+        background-color: #3a0ca3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #caf0f8;
+    }
+    
+    #text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    
+    .error {
+        font-size: 70px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .lost {
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
     }
     
     
-    @keyframes animate {
-        0% {
-            transform: scaleX(1);
-        }
-        20% {
-            transform: scaleX(-1);
-        }
-        40% {
-            transform: scaleX(1);
-        }
-        50% {
-            transform: scaleX(-1);
-        }
-        60% {
-            transform: scaleX(1);
-        }
-        80% {
-            transform: scaleX(-1);
-        }
-        100% {
-            transform: scaleX(1);
-        }
+    
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 15px 60px 15px 60px;
+        margin-top: 35px;
+        align-self: center;
+        background-color: #caf0f8;
+        border: none;
+        border-radius: 3px;
+        color: #3a0ca3;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
     }
+    
+    .button:hover {
+    
+        background-color: #f72585;
+        color: #3a0ca3;
+      }
+    
+    
+   
     
     @media (max-width: 1000px) {
         .container {
@@ -205,13 +259,13 @@ p {
     }
     
     @media (max-width: 500px) {
-        .e404 {
+        .error {
             font-size: 100px;
         }
-        .oops {
+        .lost {
             margin-top: -22px;
         }
-        .cta {
+        .button {
             margin-top: 21px;
             font-size: 13px;
         }
